@@ -2,17 +2,17 @@
 An open source SDK for Beckn protocol 
 ==========================================
 
-Did you know you can make you products Beckn enabled within 15 minutes? 
-All you need to do is ready you applications, leave the Beckn part to us and be a part of the Innovative Initiative 'Beckn Protocol'.
+Did you know you can make your products Beckn enabled within 15 minutes? 
+All you need to do is ready your applications, leave the Beckn part to us and be a part of the Innovative Initiative *'Beckn Protocol'.*
 
 This sdk includes following Beckn services:
 
-- <b>Network-facing Transport Service</b> : This layer sends/receives requests to/from a beckn-enabled network
-- <b>Request handling service</b> : This performs request handling services like signing, signature verification, encryption/decryption (If needed)
-- <b>Payload processing service</b> : This performs protocol schema level validation and network policy validation
-- <b>Network Subscription Service</b> : This manages all interactions with the network registry
-- <b>Policy integration service</b> : This manages all interactions with the Policy Registry (Specification under development)
-- <b>Client-facing Transport Service</b> : This layer sends/receives requests to/from a client running on the machine
+- <b>Network-facing Transport Service</b>: This layer sends/receives requests to/from a beckn-enabled network
+- <b>Request Handling Service</b>: This performs request handling services like signing, signature verification, encryption/decryption (If needed)
+- <b>Payload Processing Service</b>: This performs protocol schema level validation and network policy validation
+- <b>Network Subscription Service</b>: This manages all interactions with the network registry
+- <b>Policy Integration service</b>: This manages all interactions with the Policy Registry (Specification under development)
+- <b>Client-facing Transport Service</b>: This layer sends/receives requests to/from a client running on the machine
 
 ## Architecture and Philosophy behind this sdk
 Low-code is a software development approach that requires little to no coding in order to build applications and processes. We are using the same approach in our 
