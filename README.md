@@ -37,8 +37,6 @@ Beckn SDK development where developers can use this sdk and build their applicat
 
 ## Build
 
-You can build this example using
-
 ```
     mvn compile
 ```
