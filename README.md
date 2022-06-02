@@ -1,5 +1,5 @@
 
-An open source SDK for Beckn protocol 
+An open source sdk for Beckn protocol 
 ==========================================
 
 Did you know you can make your products Beckn enabled within 15 minutes? 
@@ -14,7 +14,7 @@ This sdk includes following Beckn services:
 - <b>Policy Integration service</b>: This manages all interactions with the Policy Registry (Specification under development)
 - <b>Client-facing Transport Service</b>: This layer sends/receives requests to/from a client running on the machine
 
-## Architecture and Philosophy behind this SDK
+## Architecture and Philosophy behind this sdk
 Low-code is a software development approach that requires little to no coding to build applications and processes. We are using the same approach in our 
 Beckn SDK development where developers can use this sdk and build their application without worrying about writing beckn protocol-specific codes. 
 
@@ -22,6 +22,12 @@ Beckn SDK development where developers can use this sdk and build their applicat
 - [<b>Apache Camel</b>](https://camel.apache.org/)
 : Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
 - [<b>Open Policy Agent</b>](https://www.openpolicyagent.org/) :  To manages all interactions with the Policy Registry, an open source, general-purpose policy engine that unifies policy enforcement across the stack.
+
+## Components used in this sdk 
+1. [<b>Jetty</b>](https://camel.apache.org/components/next/jetty-component.html) : The Jetty component provides HTTP-based endpoints for consuming and producing HTTP requests. That is, the Jetty component behaves as a simple Web server.
+2. [<b>JMS</b>](https://camel.apache.org/components/next/jms-component.html) : This component allows messages to be sent to (or consumed from) a JMS Queue or Topic. It uses Spring’s JMS support for declarative transactions, including Spring’s JmsTemplate for sending and a MessageListenerContainer for consuming.
+4. [<b>JSON SCHEMA VALIDATOR</b>](https://camel.apache.org/components/next/json-validator-component.html) : The JSON Schema Validator component performs bean validation of the message body against JSON Schemas
+5. [<b>Wire Tap</b>](https://camel.apache.org/components/next/json-validator-component.html) : Wire Tap allows to route messages to a separate location while they are being forwarded to the ultimate destination (Used for all callback ACK)
 
 ## Prerequisites
 
