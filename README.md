@@ -7,20 +7,20 @@ All you need to do is ready you applications, leave the Beckn part to us and be 
 
 This sdk includes following Beckn services:
 
-- Network-facing Transport Service : This layer sends/receives requests to/from a beckn-enabled network
-- Request handling service : This performs request handling services like signing, signature verification, encryption/decryption (If needed)
-- Payload processing service : This performs protocol schema level validation and network policy validation
-- Network Subscription Service : This manages all interactions with the network registry
-- Policy integration service : This manages all interactions with the Policy Registry (Specification under development)
-- Client-facing Transport Service : This layer sends/receives requests to/from a client running on the machine
+- <b>Network-facing Transport Service</b> : This layer sends/receives requests to/from a beckn-enabled network
+- <b>Request handling service</b> : This performs request handling services like signing, signature verification, encryption/decryption (If needed)
+- <b>Payload processing service</b> : This performs protocol schema level validation and network policy validation
+- <b>Network Subscription Service</b> : This manages all interactions with the network registry
+- <b>Policy integration service</b> : This manages all interactions with the Policy Registry (Specification under development)
+- <b>Client-facing Transport Service</b> : This layer sends/receives requests to/from a client running on the machine
 
 ## Architecture and Philosophy behind this sdk
 Low-code is a software development approach that requires little to no coding in order to build applications and processes. We are using the same approach in our 
 Beckn sdk development where developers can use this sdk and build their application without worrying about writing beckn protocol specific codes. 
 
 ### Library used for low-code integration
-- <b>Apache Camel</b> - Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
-- <b>Open Policy Agent</b> -  to manages all interactions with the Policy Registry.
+- <b>Apache Camel</b> : Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
+- <b>Open Policy Agent (OPA, pronounced “oh-pa”)</b> :  To manages all interactions with the Policy Registry. An open source, general-purpose policy engine that unifies policy enforcement across the stack. OPA provides a high-level declarative language that lets you specify policy as code and simple APIs to offload policy decision-making from your software.
 
 ## Prerequisites
 
