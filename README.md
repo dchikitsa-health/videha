@@ -18,9 +18,10 @@ This sdk includes following Beckn services:
 Low-code is a software development approach that requires little to no coding to build applications and processes. We are using the same approach in our 
 Beckn SDK development where developers can use this sdk and build their application without worrying about writing beckn protocol-specific codes. 
 
-### Library used for low-code integration
-- <b>Apache Camel</b> : Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
-- <b>Open Policy Agent (OPA, pronounced “oh-pa”)</b> :  To manages all interactions with the Policy Registry. An open source, general-purpose policy engine that unifies policy enforcement across the stack. OPA provides a high-level declarative language that lets you specify policy as code and simple APIs to offload policy decision-making from your software.
+### Frameworks/Libraries used for low-code integration
+- [<b>Apache Camel</b>](https://camel.apache.org/)
+: Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
+- [<b>Open Policy Agent</b>](https://www.openpolicyagent.org/) :  To manages all interactions with the Policy Registry, an open source, general-purpose policy engine that unifies policy enforcement across the stack.
 
 ## Prerequisites
 
