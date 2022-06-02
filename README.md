@@ -14,6 +14,12 @@ This sdk includes following Beckn services:
 - Policy integration service : This manages all interactions with the Policy Registry (Specification under development)
 - Client-facing Transport Service : This layer sends/receives requests to/from a client running on the machine
 
+## Architecture and Philosophy behind this sdk
+Low-code is a software development approach that requires little to no coding in order to build applications and processes. We are using the same approach in our 
+Beckn sdk development where developers can use this sdk and build their application without worrying about writing beckn protocol specific codes. 
+```
+    mvn compile
+```
 
 ## Prerequisites
 
