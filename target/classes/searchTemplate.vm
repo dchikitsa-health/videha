@@ -1,0 +1,32 @@
+#set( $specialty = ${body.message.intent.category.descriptor.name} )
+#set( $categoryId = ${body.message.intent.category.id} )
+#set( $item = ${body.message.intent.item.descriptor.name} )
+#set( $categoryCode = ${body.message.intent.category.descriptor.code} )
+#set( $dhpexp = ${body.message.intent.fulfillment.person.tags[$'./dhp-0_7_1.exp']} )
+#set( $dhpexp2 = ${body.message.intent.fulfillment.person.tags[$'./dhp-0_7_1.lang']} )
+#set( $itemId = ${body.message.intent.item.id} )
+#set( $practitioner = ${body.message.intent.fulfillment.person.descriptor.name} )
+#set( $practitionerIdentifier = ${body.message.intent.fulfillment.person.cred} )
+#set( $organization = ${body.message.intent.provider.descriptor.name} )
+#set( $organizationId = ${body.message.intent.provider.id} )
+#if($specialty)
+{"search":"specialty","value":"$specialty"}
+#elseif($categoryId)
+{"search":"categoryId","value":"$categoryId"}
+#elseif($item)
+{"search":"item","value":"$item"}
+#elseif($itemId)
+{"search":"itemId","value":"$itemId"}
+#elseif( $practitioner)
+{"search":"practitioner","value":"$practitioner"}
+#elseif( $practitionerIdentifier)
+{"search":"practitionerIdentifier","value":"$practitionerIdentifier"}
+#elseif( $organization)
+{"search":"organization","value":"$organization"}
+#elseif( $organizationId)
+{"search":"organizationId","value":"$organizationId"}
+#elseif($specialty && $practitioner)
+{"search": "specialty","value": "$specialty","andvalue": "$practitioner","andsearch": "practitioner"}  
+#end  
+
+ 
