@@ -1,5 +1,5 @@
 
-An open source sdk for Beckn protocol (WIP: not production ready)
+An open source SDK for Beckn Protocol (WIP: not production ready)
 ==========================================
 
 Did you know you can make your products Beckn enabled within 15 minutes? 
