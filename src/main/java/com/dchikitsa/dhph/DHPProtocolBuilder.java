@@ -17,6 +17,9 @@ public class DHPProtocolBuilder extends RouteBuilder {
 		// >> From GATEWAY to Template >>
 
 		from("jetty://{{url}}/search").wireTap("direct:search").to("direct:ack");
+		
+		// >> From EUA to Template >>
+
 		from("jetty://{{url}}/select").wireTap("direct:select").to("direct:ack");
 		from("jetty://{{url}}/init").wireTap("direct:init").to("direct:ack");
 		from("jetty://{{url}}/confirm").wireTap("direct:confirm").to("direct:ack");
