@@ -25,7 +25,6 @@ public class DHPProtocolBuilder extends RouteBuilder {
 		from("jetty://{{url}}/confirm").wireTap("direct:confirm").to("direct:ack");
 		from("jetty://{{url}}/status").wireTap("direct:status").to("direct:ack");
 
-		// >> From Template to Hospital/Doctor Services >>
 
 		from("direct:search").choice().when(method(SignVerify.class, "isVerified")).unmarshal().json()
 				.to("velocity:searchTemplate.vm?contentCache=true")
